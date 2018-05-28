@@ -1,0 +1,26 @@
+---
+invoice:
+  date: '2015-06-01'
+  number: 25
+company:
+  name: 'Acme LTd'
+  street_address: '7100 Athens Place'
+  city: 'Washington, DC 20521-7100'
+  phone: '+1 333 3333333'
+bill:
+  name: 'Mr. George Martin'
+  company_name: 'Acme LTd'
+  street_address: '7100 Athens Place'
+  city: 'Washington, DC 20521-7100'
+  phone: '+1 333 3333333'
+products:
+  - name: "Luno Wear Men's Wood Watch, Genuine Leather, The Shoots"
+    price: 40.00
+    taxed: false
+  - name: "SlimFold Minimalist Wallet - RFID Option"
+    price: 45.00
+    taxed: false
+  - name: "HP HP 745-G3 EliteBook 14 Notebook, Full-HD Display, MD A8-8600B Quad-Core"
+    price: 299.99
+    taxed: true
+

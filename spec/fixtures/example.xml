@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<w:wordDocument xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml">
+  <w:body>
+    <w:p>
+      <w:r>
+        <w:t>{% for client in clients %}</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>{{ client.name }}</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>{% endfor %}</w:t>
+      </w:r>
+    </w:p>
+
+    <w:tbl>
+      <w:tr type="single_tag_row">
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>{% for product in products %}</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>{{ product.name }}</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+
+      <w:tr type="single_tag_row">
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>{% endfor %}</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+
+      <w:tr type="multi_tag_row">
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>{% for foo in bar %}</w:t>
+            </w:r>
+            <w:r>
+              <w:t>{{ foo.bar }}</w:t>
+            </w:r>
+            <w:r>
+              <w:t>{% endfor %}</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+  </w:body>
+</w:wordDocument>
