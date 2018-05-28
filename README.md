@@ -2,7 +2,7 @@
 
 Bring the power of [Liquid template language](https://github.com/Shopify/liquid) to your documents!
 Liquidoc gives you ability to easily create documents from templates.
-Currently supported only `.txt` and `.docx` templates.
+Only `.txt` and `.docx` templates are currently supported.
 
 Liquidoc is super-easy to use so even your customers can create their own templates.
 
