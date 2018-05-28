@@ -76,7 +76,7 @@ class InvoiceController < ApplicationController
     respond_to do |format|
       format.html
       format.docx {
-        template = Liquidoc.template(@invoice.template).render_to_string('invoice' => )
+        template = Liquidoc.template(@invoice.template)
         content  = { 'invoice' => InvoiceDrop.new(@invoice) }
         send_data template.render_to_string(content), filename: 'invoice.docx'
       }
