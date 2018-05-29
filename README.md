@@ -38,7 +38,7 @@ context = { "name" => "Max", "hobby" => "Music" }
 ```
 Now you can create the final document:
 ```ruby
-template.render_to_file(context)
+template.render_to_file("/tmp/document_demo.docx", context)
 ```
 
 ## Rails
